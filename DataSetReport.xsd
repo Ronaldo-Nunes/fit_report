@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetReport" targetNamespace="http://tempuri.org/DataSetReport.xsd" xmlns:mstns="http://tempuri.org/DataSetReport.xsd" xmlns="http://tempuri.org/DataSetReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetReport" msprop:Generator_UserDSName="DataSetReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GraficoSexo" msprop:Generator_TableClassName="GraficoSexoDataTable" msprop:Generator_TableVarName="tableGraficoSexo" msprop:Generator_TablePropName="GraficoSexo" msprop:Generator_RowDeletingName="GraficoSexoRowDeleting" msprop:Generator_RowChangingName="GraficoSexoRowChanging" msprop:Generator_RowEvHandlerName="GraficoSexoRowChangeEventHandler" msprop:Generator_RowDeletedName="GraficoSexoRowDeleted" msprop:Generator_UserTableName="GraficoSexo" msprop:Generator_RowChangedName="GraficoSexoRowChanged" msprop:Generator_RowEvArgName="GraficoSexoRowChangeEvent" msprop:Generator_RowClassName="GraficoSexoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sexo" msprop:Generator_ColumnVarNameInTable="columnSexo" msprop:Generator_ColumnPropNameInRow="Sexo" msprop:Generator_ColumnPropNameInTable="SexoColumn" msprop:Generator_UserColumnName="Sexo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GraficoFaixaEtaria" msprop:Generator_TableClassName="GraficoFaixaEtariaDataTable" msprop:Generator_TableVarName="tableGraficoFaixaEtaria" msprop:Generator_TablePropName="GraficoFaixaEtaria" msprop:Generator_RowDeletingName="GraficoFaixaEtariaRowDeleting" msprop:Generator_RowChangingName="GraficoFaixaEtariaRowChanging" msprop:Generator_RowEvHandlerName="GraficoFaixaEtariaRowChangeEventHandler" msprop:Generator_RowDeletedName="GraficoFaixaEtariaRowDeleted" msprop:Generator_UserTableName="GraficoFaixaEtaria" msprop:Generator_RowChangedName="GraficoFaixaEtariaRowChanged" msprop:Generator_RowEvArgName="GraficoFaixaEtariaRowChangeEvent" msprop:Generator_RowClassName="GraficoFaixaEtariaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Grupo" msprop:Generator_ColumnVarNameInTable="columnGrupo" msprop:Generator_ColumnPropNameInRow="Grupo" msprop:Generator_ColumnPropNameInTable="GrupoColumn" msprop:Generator_UserColumnName="Grupo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GraficoRcq" msprop:Generator_TableClassName="GraficoRcqDataTable" msprop:Generator_TableVarName="tableGraficoRcq" msprop:Generator_RowChangedName="GraficoRcqRowChanged" msprop:Generator_TablePropName="GraficoRcq" msprop:Generator_RowDeletingName="GraficoRcqRowDeleting" msprop:Generator_RowChangingName="GraficoRcqRowChanging" msprop:Generator_RowEvHandlerName="GraficoRcqRowChangeEventHandler" msprop:Generator_RowDeletedName="GraficoRcqRowDeleted" msprop:Generator_RowClassName="GraficoRcqRow" msprop:Generator_UserTableName="GraficoRcq" msprop:Generator_RowEvArgName="GraficoRcqRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FaixaEtaria" msprop:Generator_ColumnVarNameInTable="columnFaixaEtaria" msprop:Generator_ColumnPropNameInRow="FaixaEtaria" msprop:Generator_ColumnPropNameInTable="FaixaEtariaColumn" msprop:Generator_UserColumnName="FaixaEtaria" type="xs:string" minOccurs="0" />
+              <xs:element name="cintMediaInit" msprop:Generator_ColumnVarNameInTable="columncintMediaInit" msprop:Generator_ColumnPropNameInRow="cintMediaInit" msprop:Generator_ColumnPropNameInTable="cintMediaInitColumn" msprop:Generator_UserColumnName="cintMediaInit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="quadrilMedioInit" msprop:Generator_ColumnVarNameInTable="columnquadrilMedioInit" msprop:Generator_ColumnPropNameInRow="quadrilMedioInit" msprop:Generator_ColumnPropNameInTable="quadrilMedioInitColumn" msprop:Generator_UserColumnName="quadrilMedioInit" type="xs:decimal" minOccurs="0" />
+              <xs:element name="cintMediaFinal" msprop:Generator_ColumnVarNameInTable="columncintMediaFinal" msprop:Generator_ColumnPropNameInRow="cintMediaFinal" msprop:Generator_ColumnPropNameInTable="cintMediaFinalColumn" msprop:Generator_UserColumnName="cintMediaFinal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="quadrilMedioFinal" msprop:Generator_ColumnVarNameInTable="columnquadrilMedioFinal" msprop:Generator_ColumnPropNameInRow="quadrilMedioFinal" msprop:Generator_ColumnPropNameInTable="quadrilMedioFinalColumn" msprop:Generator_UserColumnName="quadrilMedioFinal" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GraficoPesoMedio" msprop:Generator_TableClassName="GraficoPesoMedioDataTable" msprop:Generator_TableVarName="tableGraficoPesoMedio" msprop:Generator_TablePropName="GraficoPesoMedio" msprop:Generator_RowDeletingName="GraficoPesoMedioRowDeleting" msprop:Generator_RowChangingName="GraficoPesoMedioRowChanging" msprop:Generator_RowEvHandlerName="GraficoPesoMedioRowChangeEventHandler" msprop:Generator_RowDeletedName="GraficoPesoMedioRowDeleted" msprop:Generator_UserTableName="GraficoPesoMedio" msprop:Generator_RowChangedName="GraficoPesoMedioRowChanged" msprop:Generator_RowEvArgName="GraficoPesoMedioRowChangeEvent" msprop:Generator_RowClassName="GraficoPesoMedioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sexo" msprop:Generator_ColumnVarNameInTable="columnSexo" msprop:Generator_ColumnPropNameInRow="Sexo" msprop:Generator_ColumnPropNameInTable="SexoColumn" msprop:Generator_UserColumnName="Sexo" type="xs:string" minOccurs="0" />
+              <xs:element name="Grupo" msprop:Generator_ColumnVarNameInTable="columnGrupo" msprop:Generator_ColumnPropNameInRow="Grupo" msprop:Generator_ColumnPropNameInTable="GrupoColumn" msprop:Generator_UserColumnName="Grupo" type="xs:string" minOccurs="0" />
+              <xs:element name="Inicial" msprop:Generator_ColumnVarNameInTable="columnInicial" msprop:Generator_ColumnPropNameInRow="Inicial" msprop:Generator_ColumnPropNameInTable="InicialColumn" msprop:Generator_UserColumnName="Inicial" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Atual" msprop:Generator_ColumnVarNameInTable="columnAtual" msprop:Generator_ColumnPropNameInRow="Atual" msprop:Generator_ColumnPropNameInTable="AtualColumn" msprop:Generator_UserColumnName="Atual" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GraficoGordMedia" msprop:Generator_TableClassName="GraficoGordMediaDataTable" msprop:Generator_TableVarName="tableGraficoGordMedia" msprop:Generator_TablePropName="GraficoGordMedia" msprop:Generator_RowDeletingName="GraficoGordMediaRowDeleting" msprop:Generator_RowChangingName="GraficoGordMediaRowChanging" msprop:Generator_RowEvHandlerName="GraficoGordMediaRowChangeEventHandler" msprop:Generator_RowDeletedName="GraficoGordMediaRowDeleted" msprop:Generator_UserTableName="GraficoGordMedia" msprop:Generator_RowChangedName="GraficoGordMediaRowChanged" msprop:Generator_RowEvArgName="GraficoGordMediaRowChangeEvent" msprop:Generator_RowClassName="GraficoGordMediaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sexo" msprop:Generator_ColumnVarNameInTable="columnSexo" msprop:Generator_ColumnPropNameInRow="Sexo" msprop:Generator_ColumnPropNameInTable="SexoColumn" msprop:Generator_UserColumnName="Sexo" type="xs:string" minOccurs="0" />
+              <xs:element name="Grupo" msprop:Generator_ColumnVarNameInTable="columnGrupo" msprop:Generator_ColumnPropNameInRow="Grupo" msprop:Generator_ColumnPropNameInTable="GrupoColumn" msprop:Generator_UserColumnName="Grupo" type="xs:string" minOccurs="0" />
+              <xs:element name="Inicial" msprop:Generator_ColumnVarNameInTable="columnInicial" msprop:Generator_ColumnPropNameInRow="Inicial" msprop:Generator_ColumnPropNameInTable="InicialColumn" msprop:Generator_UserColumnName="Inicial" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Atual" msprop:Generator_ColumnVarNameInTable="columnAtual" msprop:Generator_ColumnPropNameInRow="Atual" msprop:Generator_ColumnPropNameInTable="AtualColumn" msprop:Generator_UserColumnName="Atual" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GraficoMassaMuscMedia" msprop:Generator_TableClassName="GraficoMassaMuscMediaDataTable" msprop:Generator_TableVarName="tableGraficoMassaMuscMedia" msprop:Generator_TablePropName="GraficoMassaMuscMedia" msprop:Generator_RowDeletingName="GraficoMassaMuscMediaRowDeleting" msprop:Generator_RowChangingName="GraficoMassaMuscMediaRowChanging" msprop:Generator_RowEvHandlerName="GraficoMassaMuscMediaRowChangeEventHandler" msprop:Generator_RowDeletedName="GraficoMassaMuscMediaRowDeleted" msprop:Generator_UserTableName="GraficoMassaMuscMedia" msprop:Generator_RowChangedName="GraficoMassaMuscMediaRowChanged" msprop:Generator_RowEvArgName="GraficoMassaMuscMediaRowChangeEvent" msprop:Generator_RowClassName="GraficoMassaMuscMediaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sexo" msprop:Generator_ColumnVarNameInTable="columnSexo" msprop:Generator_ColumnPropNameInRow="Sexo" msprop:Generator_ColumnPropNameInTable="SexoColumn" msprop:Generator_UserColumnName="Sexo" type="xs:string" minOccurs="0" />
+              <xs:element name="Grupo" msprop:Generator_ColumnVarNameInTable="columnGrupo" msprop:Generator_ColumnPropNameInRow="Grupo" msprop:Generator_ColumnPropNameInTable="GrupoColumn" msprop:Generator_UserColumnName="Grupo" type="xs:string" minOccurs="0" />
+              <xs:element name="Inicial" msprop:Generator_ColumnVarNameInTable="columnInicial" msprop:Generator_ColumnPropNameInRow="Inicial" msprop:Generator_ColumnPropNameInTable="InicialColumn" msprop:Generator_UserColumnName="Inicial" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Atual" msprop:Generator_ColumnVarNameInTable="columnAtual" msprop:Generator_ColumnPropNameInRow="Atual" msprop:Generator_ColumnPropNameInTable="AtualColumn" msprop:Generator_UserColumnName="Atual" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
