@@ -21,6 +21,10 @@ namespace FitRelatorio.Model
         public int GorduraVisceral { get; set; }
         public decimal Cintura { get; set; }
         public decimal Quadril { get; set; }
+        public decimal Rcq { get; set; }
+        public string GrauRisco { get; set; }
+        public int Idade { get; set; }
+
 
         public decimal GetImc()
         {

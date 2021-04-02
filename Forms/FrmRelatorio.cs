@@ -103,7 +103,7 @@ namespace FitRelatorio.Forms
                         where rcq.RcqInit > rcq.RcqAtual
                         select new RcqAuxiliar()
                         {
-                            codAluno = rcq.CodAluno,
+                            CodAluno = rcq.CodAluno,
                             Sexo = rcq.Sexo,
                             FaixaEtaria = rcq.FaixaEtaria
                         };

@@ -33,7 +33,10 @@ namespace FitRelatorio.DAL
                             "idadeCorporal," +
                             "gorduraVisceral," +
                             "cintura," +
-                            "quadril) " +
+                            "quadril," +
+                            "rcq," +
+                            "grauRisco," +
+                            "idade) " +
                          "VALUES (@codAluno," +
                          "@data," +
                          "@peso," +
@@ -45,7 +48,10 @@ namespace FitRelatorio.DAL
                          "@idadeCorporal," +
                          "@gorduraVisceral," +
                          "@cintura," +
-                         "@quadril)";
+                         "@quadril," +
+                         "@rcq," +
+                         "@grauRisco," +
+                         "@idade)";
                     }
                     else
                     {
@@ -61,7 +67,10 @@ namespace FitRelatorio.DAL
                             "idadeCorporal = @idadeCorporal, " +
                             "gorduraVisceral = @gorduraVisceral, " +
                             "cintura = @cintura, " +
-                            "quadril = @quadril " +
+                            "quadril = @quadril, " +
+                            "rcq = @rcq, " +
+                            "grauRisco = @grauRisco, " +
+                            "idade = @idade " +
                             "WHERE codAvaliacao == @codAvaliacao";
                         Conexao.AdicionarParametros("@codAvaliacao", avaliacao.CodAvaliacao);
                     }
@@ -78,6 +87,9 @@ namespace FitRelatorio.DAL
                     Conexao.AdicionarParametros("@gorduraVisceral", avaliacao.GorduraVisceral);
                     Conexao.AdicionarParametros("@cintura", avaliacao.Cintura);
                     Conexao.AdicionarParametros("@quadril", avaliacao.Quadril);
+                    Conexao.AdicionarParametros("@rcq", avaliacao.Rcq);
+                    Conexao.AdicionarParametros("@grauRisco", avaliacao.GrauRisco);
+                    Conexao.AdicionarParametros("@idade", avaliacao.Idade);
 
                     Conexao.ExecutarManipulacao(CommandType.Text, sqlSalvarAvaliacao);
                     retorno = true;
@@ -118,7 +130,10 @@ namespace FitRelatorio.DAL
                     "idadeCorporal," +
                     "gorduraVisceral," +
                     "cintura," +
-                    "quadril" +
+                    "quadril," +
+                    "rcq," +
+                    "grauRisco," +
+                    "idade" +
                     " FROM avaliacao WHERE codAluno == @codAluno ORDER BY data DESC";
 
                 DataTable dataTable = Conexao.ExecutarConsulta(CommandType.Text, sqlListarAvaliacao);
@@ -138,7 +153,10 @@ namespace FitRelatorio.DAL
                         IdadeCorporal = Convert.ToInt32(dataRow["idadeCorporal"]),
                         GorduraVisceral = Convert.ToInt32(dataRow["gorduraVisceral"]),
                         Cintura = Convert.ToDecimal(dataRow["cintura"]),
-                        Quadril = Convert.ToDecimal(dataRow["quadril"])
+                        Quadril = Convert.ToDecimal(dataRow["quadril"]),
+                        Rcq = Convert.ToDecimal(dataRow["rcq"]),
+                        GrauRisco = Convert.ToString(dataRow["grauRisco"]),
+                        Idade = Convert.ToInt32(dataRow["idade"])
                     };
 
                     listaAvaliacoes.Add(av);
@@ -192,6 +210,9 @@ namespace FitRelatorio.DAL
                     "gorduraVisceral," +
                     "cintura," +
                     "quadril" +
+                    "rcq," +
+                    "grauRisco," +
+                    "idade" +
                     " FROM avaliacao WHERE codAluno == @codAluno ORDER BY data ASC";
 
                 DataTable dataTable = Conexao.ExecutarConsulta(CommandType.Text, sqlListarInfo);
@@ -213,7 +234,7 @@ namespace FitRelatorio.DAL
                     }
                     else if (infoGrafico.Equals(InfoGrafico.RelacaoQuadrilCintura))
                     {
-                        oa.Valor = Math.Round(Convert.ToDecimal(dataRow["cintura"])/ Convert.ToDecimal(dataRow["quadril"]), 2);
+                        oa.Valor = Convert.ToDecimal(dataRow["rcq"]);//Math.Round(Convert.ToDecimal(dataRow["cintura"])/ Convert.ToDecimal(dataRow["quadril"]), 2);
                     }
                     else if (infoGrafico.Equals(InfoGrafico.Metabolismo))
                     {

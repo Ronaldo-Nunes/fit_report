@@ -17,11 +17,16 @@ namespace FitRelatorio.Forms
     {
         private readonly bool editCad;
         private readonly long codAvaEdit;
-        public FrmAvaliacao(string idAluno, string nome, decimal altura, Avaliacao avaliacao, bool editAval)
+        private readonly int idade;
+        private readonly string sexo;
+        public FrmAvaliacao(string idAluno, string nome, decimal altura, int idade, string sexo,
+            Avaliacao avaliacao, bool editAval)
         {
             InitializeComponent();
 
             editCad = editAval;
+            this.idade = idade;
+            this.sexo = sexo;
             codAvaEdit = avaliacao != null ? avaliacao.CodAvaliacao : 0;
             lblCodAluno.Text = idAluno;
             lblNomeAluno.Text = nome;

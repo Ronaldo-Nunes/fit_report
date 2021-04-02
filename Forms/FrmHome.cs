@@ -107,7 +107,7 @@ namespace FitRelatorio.Forms
             string sexo = lblSexoAluno.Text;
             int idade = Convert.ToInt32(lblIdadeAluno.Text);
             decimal altura = GetAltura();
-            FrmAvaliacao frmAvaliacao = new FrmAvaliacao(idAluno, nome, altura, null, false);
+            FrmAvaliacao frmAvaliacao = new FrmAvaliacao(idAluno, nome, altura, idade, sexo, null, false);
             DialogResult result = frmAvaliacao.ShowDialog();
             long id = Convert.ToInt64(idAluno);
             if (result == DialogResult.OK)
@@ -229,13 +229,15 @@ namespace FitRelatorio.Forms
 
         private void TsMenuEditar_Click(object sender, EventArgs e)
         {
-            string codAluno = lblNumCodAluno.Text;
+            string idAluno = lblNumCodAluno.Text;
             string nome = lblNomeAluno.Text;
+            string sexo = lblSexoAluno.Text;
+            int idade = Convert.ToInt32(lblIdadeAluno.Text);
 
             DataGridViewRow row = dgvAvaliacoes.CurrentRow;
             if (row.DataBoundItem is Avaliacao avaliacao)
             {
-                FrmAvaliacao frmAvaliacao = new FrmAvaliacao(codAluno, nome, 0, avaliacao, true);
+                FrmAvaliacao frmAvaliacao = new FrmAvaliacao(idAluno, nome, 0, idade, sexo, avaliacao, true);
                 DialogResult result = frmAvaliacao.ShowDialog();
                 if (result == DialogResult.OK)
                 {
