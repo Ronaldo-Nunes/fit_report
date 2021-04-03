@@ -37,7 +37,7 @@
             // 
             // AvaliacaoAuxiliarBindingSource
             // 
-            this.AvaliacaoAuxiliarBindingSource.DataSource = typeof(FitRelatorio.Model.AvaliacaoAuxiliar);
+            this.AvaliacaoAuxiliarBindingSource.DataSource = typeof(FitRelatorio.Model.ComparativoAvaliacoes);
             // 
             // reportSelect
             // 

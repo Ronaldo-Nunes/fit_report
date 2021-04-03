@@ -1,6 +1,6 @@
 ﻿namespace FitRelatorio.Model
 {
-    public class AvaliacaoAuxiliar
+    public class ComparativoAvaliacoes
     {
         public long CodAluno { get; set; }
         public decimal GorduraInit { get; set; }

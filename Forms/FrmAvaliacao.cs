@@ -1,4 +1,5 @@
-﻿using FitRelatorio.DAL;
+﻿using FitRelatorio.Auxiliar;
+using FitRelatorio.DAL;
 using FitRelatorio.Model;
 using System;
 using System.Collections.Generic;
@@ -19,13 +20,13 @@ namespace FitRelatorio.Forms
         private readonly long codAvaEdit;
         private readonly int idade;
         private readonly string sexo;
-        public FrmAvaliacao(string idAluno, string nome, decimal altura, int idade, string sexo,
+        public FrmAvaliacao(string idAluno, string nome, decimal altura, DateTime dataNascimento, string sexo,
             Avaliacao avaliacao, bool editAval)
         {
             InitializeComponent();
 
             editCad = editAval;
-            this.idade = idade;
+            idade = Validations.CalcularIdade(dataNascimento, DateTime.Now);
             this.sexo = sexo;
             codAvaEdit = avaliacao != null ? avaliacao.CodAvaliacao : 0;
             lblCodAluno.Text = idAluno;
@@ -35,6 +36,7 @@ namespace FitRelatorio.Forms
             if (editAval)
             {
                 Text = "Editar avaliação";
+                idade = Validations.CalcularIdade(dataNascimento, avaliacao.Data);
                 PreencherCampos(avaliacao);
             }
         }
@@ -111,6 +113,9 @@ namespace FitRelatorio.Forms
                     avaliacao.GorduraVisceral = Convert.ToInt32(txtGordVisc.Text);
                     avaliacao.Cintura = Convert.ToDecimal(txtCintura.Text);
                     avaliacao.Quadril = Convert.ToDecimal(txtQuadril.Text);
+                    avaliacao.Rcq = avaliacao.GetRcq();
+                    avaliacao.Idade = idade;
+                    avaliacao.GrauRisco = avaliacao.GetGrauRiscoRcq(sexo);
                     
                     if (avaliacaoDAL.SalvarAvaliacao(avaliacao, editCad))
                     {

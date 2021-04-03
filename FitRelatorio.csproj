@@ -148,7 +148,7 @@
     </Compile>
     <Compile Include="Model\Aluno.cs" />
     <Compile Include="Model\Avaliacao.cs" />
-    <Compile Include="Model\AvaliacaoAuxiliar.cs" />
+    <Compile Include="Model\ComparativoAvaliacoes.cs" />
     <Compile Include="Model\ObjetoAuxiliar.cs" />
     <Compile Include="Model\RcqAuxiliar.cs" />
     <Compile Include="Model\RiscoRcq.cs" />

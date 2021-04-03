@@ -28,5 +28,15 @@ namespace FitRelatorio.Auxiliar
             return cpf.Replace(".", "").Replace("-", "");
         }
 
+        public static int CalcularIdade(DateTime dataNascimento, DateTime dataReferencia)
+        {
+            int idade = dataReferencia.Year - dataNascimento.Year;
+
+            //por anos bissextos precisamos disso
+            if (dataNascimento > dataReferencia.AddYears(-idade)) idade--;
+
+            return idade;
+        }
+
     }
 }

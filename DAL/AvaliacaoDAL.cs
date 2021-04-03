@@ -333,13 +333,13 @@ namespace FitRelatorio.DAL
                                         "FROM AgeData), " +
 
                                         "AvaliacaoInicial AS " +
-                                        "(SELECT [codAluno],[cintura] AS cinturaInit,[quadril] AS quadrilInit, MIN(data) AS minDate " +
+                                        "(SELECT [codAluno],[rcq] AS rcqInit, MIN(data) AS minDate " +
                                         "FROM avaliacao " +
                                         "WHERE strftime('%s',data) BETWEEN strftime('%s', '" + anoStr + "-01-01') AND strftime('%s', '" + anoStr + "-12-31') " +
                                         "GROUP BY [codAluno]), " +
 
                                         "AvaliacaoFinal AS " +
-                                        "(SELECT [codAluno],[cintura] AS cinturaFinal,[quadril] AS quadrilFinal, MAX(data) AS maxDate " +
+                                        "(SELECT [codAluno],[rcq] AS rcqFinal, MAX(data) AS maxDate " +
                                         "FROM avaliacao " +
                                         "WHERE strftime('%s',data) BETWEEN strftime('%s', '" + anoStr + "-01-01') AND strftime('%s', '" + anoStr + "-12-31') " +
                                         "GROUP BY [codAluno]) " +
@@ -456,20 +456,20 @@ namespace FitRelatorio.DAL
                                         "FROM aluno), " +
 
                                         "AvaliacaoInicial AS " +
-                                        "(SELECT [codAluno], [cintura] AS cinturaInit, [quadril] As quadrilInit, MIN(data) AS minDate " +
+                                        "(SELECT [codAluno], [rcq] AS rcqInit, MIN(data) AS minDate " +
                                         "FROM avaliacao " +
                                         "WHERE strftime('%s',data) BETWEEN strftime('%s', '" + anoStr + "-01-01') AND strftime('%s', '" + anoStr + "-12-31') " +
                                         "GROUP BY [codAluno]), " +
 
                                         "AvaliacaoFinal AS " +
-                                        "(SELECT [codAluno], [cintura] AS cinturaFinal, [quadril] AS quadrilFinal, MAX(data) AS maxDate " +
+                                        "(SELECT [codAluno], [rcq] AS rcqFinal, MAX(data) AS maxDate " +
                                         "FROM avaliacao " +
                                         "WHERE strftime('%s',data) BETWEEN strftime('%s', '" + anoStr + "-01-01') AND strftime('%s', '" + anoStr + "-12-31') " +
                                         "GROUP BY [codAluno]) " +
 
                                         "SELECT GA.AgeGroups AS Grupo, SG.SEXO AS Sexo, " +
-                                        "AI.cinturaInit, AI.quadrilInit, " +
-                                        "AF.cinturaFinal, AF.quadrilFinal " +
+                                        "AI.rcqInit, " +
+                                        "AF.rcqFinal " +
                                         "FROM GroupAge AS GA " +
                                         "JOIN AvaliacaoInicial AS AI ON GA.codAluno = AI.codAluno " +
                                         "JOIN AvaliacaoFinal AS AF ON GA.codAluno = AF.codAluno " +
@@ -480,11 +480,13 @@ namespace FitRelatorio.DAL
                 DataTable dataTable = Conexao.ExecutarConsulta(CommandType.Text, sql);
                 foreach (DataRow row in dataTable.Rows)
                 {
-                    RiscoRcq risco = new RiscoRcq();
-                    risco.Sexo = Convert.ToString(row["Sexo"]);
-                    risco.FaixaEtaria = Convert.ToString(row["Grupo"]);
-                    risco.RcqInit = (Convert.ToDecimal(row["cinturaInit"]) / Convert.ToDecimal(row["quadrilInit"]));
-                    risco.RcqAtual = (Convert.ToDecimal(row["cinturaFinal"]) / Convert.ToDecimal(row["quadrilFinal"]));
+                    RiscoRcq risco = new RiscoRcq
+                    {
+                        Sexo = Convert.ToString(row["Sexo"]),
+                        FaixaEtaria = Convert.ToString(row["Grupo"]),
+                        RcqInit = (Convert.ToDecimal(row["rcqInit"])),
+                        RcqAtual = (Convert.ToDecimal(row["rcqFinal"]))
+                    };
                     risco.RiscoInicial = RiscoRcq.GetRiscosRcq(risco.Sexo, risco.FaixaEtaria, risco.RcqInit);
                     risco.RiscoAtual = RiscoRcq.GetRiscosRcq(risco.Sexo, risco.FaixaEtaria, risco.RcqAtual);
                     riscos.Add(risco);
@@ -498,13 +500,13 @@ namespace FitRelatorio.DAL
             }
         }
 
-        public AvaliacaoAuxiliar GetAvaliacaoSeletiva(long codAluno)
+        public ComparativoAvaliacoes GetAvaliacaoSeletiva(long codAluno)
         {
             try
             {
                 Conexao.LimparParametros();
                 Conexao.AdicionarParametros("@codAluno", codAluno);
-                AvaliacaoAuxiliar auxiliar = new AvaliacaoAuxiliar();
+                ComparativoAvaliacoes auxiliar = new ComparativoAvaliacoes();
 
                 string sql = "WITH AvaliacaoInit AS " +
                                  "(SELECT " +

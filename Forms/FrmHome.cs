@@ -13,7 +13,7 @@ namespace FitRelatorio.Forms
     {
         private List<Avaliacao> listAvaliacoesAtual;
         private readonly List<Aluno> ALUNOS_SELECIONADOS = new List<Aluno>();
-        private readonly List<AvaliacaoAuxiliar> AVALIACOES_AUXILIARES = new List<AvaliacaoAuxiliar>();
+        private readonly List<ComparativoAvaliacoes> AVALIACOES_AUXILIARES = new List<ComparativoAvaliacoes>();
         
         private bool selecaoAtiva = false;
         public FrmHome()
@@ -106,8 +106,9 @@ namespace FitRelatorio.Forms
             string nome = lblNomeAluno.Text;
             string sexo = lblSexoAluno.Text;
             int idade = Convert.ToInt32(lblIdadeAluno.Text);
+            DateTime dataNasc = Convert.ToDateTime(lblDnAluno.Text);
             decimal altura = GetAltura();
-            FrmAvaliacao frmAvaliacao = new FrmAvaliacao(idAluno, nome, altura, idade, sexo, null, false);
+            FrmAvaliacao frmAvaliacao = new FrmAvaliacao(idAluno, nome, altura, dataNasc, sexo, null, false);
             DialogResult result = frmAvaliacao.ShowDialog();
             long id = Convert.ToInt64(idAluno);
             if (result == DialogResult.OK)
@@ -233,11 +234,12 @@ namespace FitRelatorio.Forms
             string nome = lblNomeAluno.Text;
             string sexo = lblSexoAluno.Text;
             int idade = Convert.ToInt32(lblIdadeAluno.Text);
+            DateTime dataNasc = Convert.ToDateTime(lblDnAluno.Text);
 
             DataGridViewRow row = dgvAvaliacoes.CurrentRow;
             if (row.DataBoundItem is Avaliacao avaliacao)
             {
-                FrmAvaliacao frmAvaliacao = new FrmAvaliacao(idAluno, nome, 0, idade, sexo, avaliacao, true);
+                FrmAvaliacao frmAvaliacao = new FrmAvaliacao(idAluno, nome, 0, dataNasc, sexo, avaliacao, true);
                 DialogResult result = frmAvaliacao.ShowDialog();
                 if (result == DialogResult.OK)
                 {
@@ -588,7 +590,7 @@ namespace FitRelatorio.Forms
 
         private void AddAvaliacaoSelecionada(long codAluno)
         {
-            AvaliacaoAuxiliar aux = GetAvaliacaoSelecionada(codAluno);
+            ComparativoAvaliacoes aux = GetAvaliacaoSelecionada(codAluno);
             if (aux != null)
             {
                 AVALIACOES_AUXILIARES.Add(aux);
@@ -607,7 +609,7 @@ namespace FitRelatorio.Forms
             }
         }
 
-        private AvaliacaoAuxiliar GetAvaliacaoSelecionada(long codAluno)
+        private ComparativoAvaliacoes GetAvaliacaoSelecionada(long codAluno)
         {
             AvaliacaoDAL avaliacaoDAL = new AvaliacaoDAL();
             try
@@ -652,7 +654,7 @@ namespace FitRelatorio.Forms
                     graficoRiscQuadrilCintura.Series["Risco alto"].Points.Clear();
                     graficoRiscQuadrilCintura.Series["Risco muito alto"].Points.Clear();
                     
-                    RiscoRcq risco = GetRiscosRcq(sexo, idade);                    
+                    ReferenciaRiscoRcq risco = GetRiscosRcq(sexo, idade);                    
 
                     for (int i = 0; i < list.Count(); i++)
                     {
@@ -674,7 +676,7 @@ namespace FitRelatorio.Forms
                         graficoTxMassaMusc.Series["Massa muscular (%)"].Points.AddXY(item.Data.ToString("MM/yy"), item.MassaMuscEsqueletica);
                         graficoTxMassaMusc.Series["Variação (%)"].Points.AddXY(item.Data.ToString("MM/yy"), Avaliacao.GetVariacaoCampo(massaMuscInit, item.MassaMuscEsqueletica));
 
-                        decimal riscoResult = Avaliacao.GetRcq(item.Cintura, item.Quadril);
+                        decimal riscoResult = item.Rcq;//Avaliacao.GetRcq(item.Cintura, item.Quadril);
                         graficoRiscQuadrilCintura.Series["Resultado"].Points.AddXY(item.Data.ToString("MM/yy"), riscoResult);
                         graficoRiscQuadrilCintura.Series["Baixo risco"].Points.AddXY(item.Data.ToString("MM/yy"), risco.Baixo);
                         graficoRiscQuadrilCintura.Series["Risco moderado"].Points.AddXY(item.Data.ToString("MM/yy"), risco.Moderado);
@@ -725,9 +727,9 @@ namespace FitRelatorio.Forms
 
         }
 
-        private RiscoRcq GetRiscosRcq(string sexo, int idade)
+        private ReferenciaRiscoRcq GetRiscosRcq(string sexo, int idade)
         {
-            RiscoRcq riscoRcq = new RiscoRcq();
+            ReferenciaRiscoRcq riscoRcq = new ReferenciaRiscoRcq();
             decimal baixoRisco;
             decimal riscoMod;
             decimal riscoAlto;
@@ -873,7 +875,7 @@ namespace FitRelatorio.Forms
             return riscoRcq;
         }
 
-        class RiscoRcq
+        class ReferenciaRiscoRcq
         {
             public decimal Baixo { get; set; }
             public decimal Moderado { get; set; }

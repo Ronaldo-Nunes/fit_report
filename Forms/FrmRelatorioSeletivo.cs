@@ -15,8 +15,8 @@ namespace FitRelatorio.Forms
 {
     public partial class FrmRelatorioSeletivo : Form
     {
-        private readonly List<AvaliacaoAuxiliar> AVALIACOES;
-        public FrmRelatorioSeletivo(List<AvaliacaoAuxiliar> avaliacoes)
+        private readonly List<ComparativoAvaliacoes> AVALIACOES;
+        public FrmRelatorioSeletivo(List<ComparativoAvaliacoes> avaliacoes)
         {
             InitializeComponent();
 
@@ -30,7 +30,7 @@ namespace FitRelatorio.Forms
             BindCharts(AVALIACOES);
         }
         
-        private void BindCharts(List<AvaliacaoAuxiliar> avaliacoes)
+        private void BindCharts(List<ComparativoAvaliacoes> avaliacoes)
         {
             try
             {
