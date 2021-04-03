@@ -24,6 +24,7 @@ namespace FitRelatorio.Model
         public decimal Rcq { get; set; }
         public string GrauRisco { get; set; }
         public int Idade { get; set; }
+        public string ClassificacaoGorduraCorporal { get; set; }
 
         public static decimal GetVariacaoCampo(decimal valorAnt, decimal valorAtual)
         {
@@ -251,6 +252,209 @@ namespace FitRelatorio.Model
             }
 
             return risco;
+        }
+
+        public string GetClassificacaoTaxaGordura(string sexo)
+        {
+            string a = "Baixa";
+            string b = "Boa";
+            string c = "Normal";
+            string d = "Elevada";
+            string e = "Muito elevada";
+            string classificacao;
+            if (sexo.Equals("M"))
+            {
+                if (Idade <= 29)
+                {
+                    if (GorduraCorporal < 11)
+                    {
+                        classificacao = a;
+                    }
+                    else if (GorduraCorporal >= 11 && GorduraCorporal <= 13)
+                    {
+                        classificacao = b;
+                    }
+                    else if (GorduraCorporal >= 14 && GorduraCorporal <= 20)
+                    {
+                        classificacao = c;
+                    }
+                    else if (GorduraCorporal >= 21 && GorduraCorporal <= 23)
+                    {
+                        classificacao = d;
+                    }
+                    else
+                    {
+                        classificacao = e;
+                    }
+                }
+                else if (Idade >= 30 && Idade <= 39)
+                {
+                    if (GorduraCorporal < 12)
+                    {
+                        classificacao = a;
+                    }
+                    else if (GorduraCorporal >= 12 && GorduraCorporal <= 14)
+                    {
+                        classificacao = b;
+                    }
+                    else if (GorduraCorporal >= 15 && GorduraCorporal <= 21)
+                    {
+                        classificacao = c;
+                    }
+                    else if (GorduraCorporal >= 22 && GorduraCorporal <= 24)
+                    {
+                        classificacao = d;
+                    }
+                    else
+                    {
+                        classificacao = e;
+                    }
+                }
+                else if (Idade >= 40 && Idade <= 49)
+                {
+                    if (GorduraCorporal < 14)
+                    {
+                        classificacao = a;
+                    }
+                    else if (GorduraCorporal >= 14 && GorduraCorporal <= 16)
+                    {
+                        classificacao = b;
+                    }
+                    else if (GorduraCorporal >= 17 && GorduraCorporal <= 23)
+                    {
+                        classificacao = c;
+                    }
+                    else if (GorduraCorporal >= 24 && GorduraCorporal <= 26)
+                    {
+                        classificacao = d;
+                    }
+                    else
+                    {
+                        classificacao = e;
+                    }
+                }
+                else //if (Idade >= 50)
+                {
+                    if (GorduraCorporal < 15)
+                    {
+                        classificacao = a;
+                    }
+                    else if (GorduraCorporal >= 15 && GorduraCorporal <= 17)
+                    {
+                        classificacao = b;
+                    }
+                    else if (GorduraCorporal >= 18 && GorduraCorporal <= 24)
+                    {
+                        classificacao = c;
+                    }
+                    else if (GorduraCorporal >= 25 && GorduraCorporal <= 23)
+                    {
+                        classificacao = d;
+                    }
+                    else
+                    {
+                        classificacao = e;
+                    }
+                }
+               
+            }
+            else
+            {
+                if (Idade <= 29)
+                {
+                    if (GorduraCorporal < 16)
+                    {
+                        classificacao = a;
+                    }
+                    else if (GorduraCorporal >= 16 && GorduraCorporal <= 19)
+                    {
+                        classificacao = b;
+                    }
+                    else if (GorduraCorporal >= 20 && GorduraCorporal <= 28)
+                    {
+                        classificacao = c;
+                    }
+                    else if (GorduraCorporal >= 29 && GorduraCorporal <= 31)
+                    {
+                        classificacao = d;
+                    }
+                    else
+                    {
+                        classificacao = e;
+                    }
+                }
+                else if (Idade >= 30 && Idade <= 39)
+                {
+                    if (GorduraCorporal < 17)
+                    {
+                        classificacao = a;
+                    }
+                    else if (GorduraCorporal >= 17 && GorduraCorporal <= 20)
+                    {
+                        classificacao = b;
+                    }
+                    else if (GorduraCorporal >= 21 && GorduraCorporal <= 29)
+                    {
+                        classificacao = c;
+                    }
+                    else if (GorduraCorporal >= 30 && GorduraCorporal <= 32)
+                    {
+                        classificacao = d;
+                    }
+                    else
+                    {
+                        classificacao = e;
+                    }
+                }
+                else if (Idade >= 40 && Idade <= 49)
+                {
+                    if (GorduraCorporal < 18)
+                    {
+                        classificacao = a;
+                    }
+                    else if (GorduraCorporal >= 18 && GorduraCorporal <= 21)
+                    {
+                        classificacao = b;
+                    }
+                    else if (GorduraCorporal >= 22 && GorduraCorporal <= 30)
+                    {
+                        classificacao = c;
+                    }
+                    else if (GorduraCorporal >= 31 && GorduraCorporal <= 33)
+                    {
+                        classificacao = d;
+                    }
+                    else
+                    {
+                        classificacao = e;
+                    }
+                }
+                else //if (Idade >= 50 && Idade <= 59)
+                {
+                    if (GorduraCorporal < 19)
+                    {
+                        classificacao = a;
+                    }
+                    else if (GorduraCorporal >= 19 && GorduraCorporal <= 22)
+                    {
+                        classificacao = b;
+                    }
+                    else if (GorduraCorporal >= 23 && GorduraCorporal <= 31)
+                    {
+                        classificacao = c;
+                    }
+                    else if (GorduraCorporal >= 32 && GorduraCorporal <= 34)
+                    {
+                        classificacao = d;
+                    }
+                    else
+                    {
+                        classificacao = e;
+                    }
+                }
+            }
+
+            return classificacao;
         }
 
         public string GetClassifcImc()

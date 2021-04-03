@@ -116,6 +116,7 @@ namespace FitRelatorio.Forms
                     avaliacao.Rcq = avaliacao.GetRcq();
                     avaliacao.Idade = idade;
                     avaliacao.GrauRisco = avaliacao.GetGrauRiscoRcq(sexo);
+                    avaliacao.ClassificacaoGorduraCorporal = avaliacao.GetClassificacaoTaxaGordura(sexo);
                     
                     if (avaliacaoDAL.SalvarAvaliacao(avaliacao, editCad))
                     {
@@ -146,9 +147,11 @@ namespace FitRelatorio.Forms
         {
             if (!string.IsNullOrEmpty(txtPeso.Text) && !string.IsNullOrEmpty(txtAltura.Text))
             {
-                Avaliacao av = new Avaliacao();
-                av.Peso = Math.Round(Convert.ToDecimal(txtPeso.Text), 2);
-                av.Altura = Math.Round(Convert.ToDecimal(txtAltura.Text), 2);
+                Avaliacao av = new Avaliacao
+                {
+                    Peso = Math.Round(Convert.ToDecimal(txtPeso.Text), 2),
+                    Altura = Math.Round(Convert.ToDecimal(txtAltura.Text), 2)
+                };
                 av.Imc = av.GetImc();
                 txtImc.Text = av.GetImc().ToString();
                 txtClassifImc.Text = av.GetClassifcImc();

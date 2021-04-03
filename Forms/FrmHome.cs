@@ -149,7 +149,7 @@ namespace FitRelatorio.Forms
 
         private void DgvListAlunos_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter && e.Control && selecaoAtiva)
+            if (e.Control && e.KeyCode == Keys.Enter && selecaoAtiva)
             {
                 DataGridViewRow vr = dgvListAlunos.CurrentRow;
                 if (vr.DataBoundItem is Aluno aluno)
@@ -161,7 +161,13 @@ namespace FitRelatorio.Forms
                         dgvAlunosSelecionados.DataSource = ALUNOS_SELECIONADOS;
                         dgvAlunosSelecionados.Update();
                         dgvAlunos.Refresh();
+
+                        AddAvaliacaoSelecionada(aluno.CodAluno);
                     }
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum aluno selecionado");
                 }
             }
         }
@@ -233,7 +239,6 @@ namespace FitRelatorio.Forms
             string idAluno = lblNumCodAluno.Text;
             string nome = lblNomeAluno.Text;
             string sexo = lblSexoAluno.Text;
-            int idade = Convert.ToInt32(lblIdadeAluno.Text);
             DateTime dataNasc = Convert.ToDateTime(lblDnAluno.Text);
 
             DataGridViewRow row = dgvAvaliacoes.CurrentRow;
@@ -383,6 +388,42 @@ namespace FitRelatorio.Forms
             }
         }
 
+        private void FiltrarAlunos(string campoFiltro, string valorFiltro)
+        {
+            DesativarSelecao();
+            try
+            {
+                AlunoDAL alunoDAL = new AlunoDAL();
+                List<Aluno> list = new List<Aluno>();
+                list = alunoDAL.FiltrarPorParametro(campoFiltro, valorFiltro).ToList();
+
+                string campo;
+                if (campoFiltro.Equals("rcq"))
+                {
+                    campo = "nível de risco referente à RELAÇÃO CINTURA-QUADRIL classificado como ";
+                }
+                else
+                {
+                    campo = "TAXA DE GORDURA CORPORAL classificada como ";
+                }
+
+                if (list.Count() > 0)
+                {
+                    PreencherDatagridAlunos(list);
+                    lblAvisoSelect.Visible = true;
+                    lblAvisoSelect.Text = "Abaixo estão listados os alunos que possuem " + campo + valorFiltro.ToUpper() + ".";
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum aluno foi localizado com base na opção selecionada.", "Filtro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
         private void PreencherDetalhesAluno(Aluno aluno)
         {
             UseWaitCursor = true;
@@ -449,14 +490,19 @@ namespace FitRelatorio.Forms
                 dgvAvaliacaoSelect.Update();
                 dgvAvaliacaoSelect.Refresh();
 
-                if (avs.Count >= 2)
+                if (avs.Count == 1)
+                {
+                    lblInfoGrafico.Text = "Este aluno possui apenas uma avaliação. Para personalizar a exibição dos resultados, cadastre ao menos duas avaliações para gerar gráficos comparativos.";
+                }
+                else if (avs.Count >= 2 && avs.Count < 6)
                 {
                     lblInfoGrafico.Text = "Exibindo gráficos das " + avs.Count + " últimas avaliações. Para personalizar a exibição dos resultados, selecione ao menos duas das avaliações abaixo para gerar seus respectivos gráficos.";
-                }
+                } 
                 else
                 {
-                    lblInfoGrafico.Visible = false;
+                    lblInfoGrafico.Text = "Exibindo gráficos das 6 últimas avaliações. Para personalizar a exibição dos resultados, selecione ao menos duas das avaliações abaixo para gerar seus respectivos gráficos.";
                 }
+                
             }
             else
             {
@@ -525,6 +571,8 @@ namespace FitRelatorio.Forms
                 tabDadosAluno.TabPages.Add(tabAlunosSelecionados);
                 tabDadosAluno.Visible = true;
                 lblAvisoSelect.Visible = true;
+                lblAvisoSelect.Text = "Abaixo estão listados os alunos que possuem ao menos duas avaliações cadastradas" +
+                    " no sistema. Para selecionar um aluno clique na seta após o nome ou pressione CTRL+ENTER.";
                 dgvListAlunos.Columns.Add(dgvAlunosColunaSelecionar);
             }
            
@@ -622,6 +670,52 @@ namespace FitRelatorio.Forms
                 return null;
             }
 
+        }
+
+        //############################################# FILTROS ######################################
+        private void menuRcqBaixo_Click(object sender, EventArgs e)
+        {
+            FiltrarAlunos("rcq", "Baixo");
+        }
+
+        private void menuRcqModerado_Click(object sender, EventArgs e)
+        {
+            FiltrarAlunos("rcq", "Moderado");
+        }
+
+        private void menuRcqAlto_Click(object sender, EventArgs e)
+        {
+            FiltrarAlunos("rcq", "Alto");
+        }
+
+        private void menuRcqMuitoAlto_Click(object sender, EventArgs e)
+        {
+            FiltrarAlunos("rcq", "Muito alto");
+        }
+
+        private void menuGorduraBaixa_Click(object sender, EventArgs e)
+        {
+            FiltrarAlunos("gordura", "Baixa");
+        }
+
+        private void menuGorduraBoa_Click(object sender, EventArgs e)
+        {
+            FiltrarAlunos("gordura", "Boa");
+        }
+
+        private void menuGorduraNormal_Click(object sender, EventArgs e)
+        {
+            FiltrarAlunos("gordura", "Normal");
+        }
+
+        private void menuGorduraElevada_Click(object sender, EventArgs e)
+        {
+            FiltrarAlunos("gordura", "Elevada");
+        }
+
+        private void menuGorduraMuitoElevada_Click(object sender, EventArgs e)
+        {
+            FiltrarAlunos("gordura", "Muito elevada");
         }
 
         //############################################# GRAFICOS ######################################      
@@ -882,6 +976,5 @@ namespace FitRelatorio.Forms
             public decimal Alto { get; set; }
             public decimal MuitoAlto { get; set; }
         }
-
     }
 }

@@ -49,7 +49,7 @@ namespace FitRelatorio.DAL
                 conn.Open();
 
                 string sqlScript = "CREATE TABLE aluno (codAluno INTEGER PRIMARY KEY ASC AUTOINCREMENT UNIQUE NOT NULL, nome VARCHAR (70) NOT NULL, cpf VARCHAR (15) UNIQUE NOT NULL, dataNascimento DATE NOT NULL, sexo VARCHAR (1) NOT NULL);";
-                sqlScript += "CREATE TABLE avaliacao (codAvaliacao INTEGER PRIMARY KEY ASC AUTOINCREMENT UNIQUE NOT NULL, codAluno INTEGER REFERENCES aluno (codAluno) NOT NULL, data DATE NOT NULL, peso DECIMAL (5, 2) NOT NULL, altura DECIMAL (3, 2) NOT NULL, imc DECIMAL (5, 2) NOT NULL, gorduraCorporal DECIMAL (5, 2) NOT NULL, massaMuscEsqueletica DECIMAL (5, 2) NOT NULL, metabolismoBasal INTEGER NOT NULL, idadeCorporal INTEGER NOT NULL, gorduraVisceral INTEGER NOT NULL, cintura DECIMAL (5, 2) NOT NULL, quadril DECIMAL (5, 2) NOT NULL, rcq DECIMAL (4, 2) NOT NULL, idade INTEGER NOT NULL, grauRisco VARCHAR (70) NOT NULL);";
+                sqlScript += "CREATE TABLE avaliacao (codAvaliacao INTEGER PRIMARY KEY ASC AUTOINCREMENT UNIQUE NOT NULL, codAluno INTEGER REFERENCES aluno (codAluno) NOT NULL, data DATE NOT NULL, peso DECIMAL (5, 2) NOT NULL, altura DECIMAL (3, 2) NOT NULL, imc DECIMAL (5, 2) NOT NULL, gorduraCorporal DECIMAL (5, 2) NOT NULL, massaMuscEsqueletica DECIMAL (5, 2) NOT NULL, metabolismoBasal INTEGER NOT NULL, idadeCorporal INTEGER NOT NULL, gorduraVisceral INTEGER NOT NULL, cintura DECIMAL (5, 2) NOT NULL, quadril DECIMAL (5, 2) NOT NULL, rcq DECIMAL (4, 2) NOT NULL, grauRisco VARCHAR (70) NOT NULL, idade INTEGER NOT NULL, classificacaoGorduraCorporal VARCHAR (70) NOT NULL);";
 
                 command.CommandText = sqlScript;
 

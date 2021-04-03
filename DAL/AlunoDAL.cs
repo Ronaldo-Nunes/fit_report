@@ -107,6 +107,70 @@ namespace FitRelatorio.DAL
             }
         }
 
+        public IEnumerable<Aluno> FiltrarPorParametro(string campoFiltro, string valorFiltro)
+        {
+            string sqlListarAluno;
+            List<Aluno> listaAlunos = new List<Aluno>();
+
+            try
+            {
+                Conexao.LimparParametros();
+
+                if (campoFiltro.Equals("rcq"))
+                {
+                    sqlListarAluno = "WITH UltimaAvaliacao AS " +
+                     "(SELECT avaliacao.codAluno AS codAluno, " +
+                     "avaliacao.grauRisco, " +
+                     "MAX(avaliacao.data) " +
+                     "FROM avaliacao " +
+                     "GROUP BY codAluno) " +
+                     "SELECT Al.codAluno, Al.cpf, Al.nome, Al.dataNascimento, Al.sexo " +
+                     "FROM UltimaAvaliacao AS Aval " +
+                     "JOIN aluno AS Al ON Aval.codAluno = Al.codAluno " +
+                     "WHERE Aval.grauRisco == @grauRisco " +
+                     "ORDER BY Al.codAluno";
+                    Conexao.AdicionarParametros("@grauRisco", valorFiltro);
+                }
+                else
+                {
+                    sqlListarAluno = "WITH UltimaAvaliacao AS " +
+                     "(SELECT avaliacao.codAluno AS codAluno, " +
+                     "avaliacao.classificacaoGorduraCorporal, " +
+                     "MAX(avaliacao.data) " +
+                     "FROM avaliacao " +
+                     "GROUP BY codAluno) " +
+                     "SELECT Al.codAluno, Al.cpf, Al.nome, Al.dataNascimento, Al.sexo " +
+                     "FROM UltimaAvaliacao AS Aval " +
+                     "JOIN aluno AS Al ON Aval.codAluno = Al.codAluno " +
+                     "WHERE Aval.classificacaoGorduraCorporal == @classificacaoGorduraCorporal " +
+                     "ORDER BY Al.codAluno";
+                    Conexao.AdicionarParametros("@classificacaoGorduraCorporal", valorFiltro);
+                }
+
+                DataTable dataTable = Conexao.ExecutarConsulta(CommandType.Text, sqlListarAluno);
+                foreach (DataRow dataRow in dataTable.Rows)
+                {
+                    Aluno al = new Aluno
+                    {
+                        CodAluno = Convert.ToInt64(dataRow["codAluno"]),
+                        Cpf = Convert.ToString(dataRow["cpf"]),
+                        Nome = Convert.ToString(dataRow["nome"]),
+                        DataNascimento = Convert.ToDateTime(dataRow["dataNascimento"]),
+                        Sexo = Convert.ToString(dataRow["sexo"])
+                    };
+
+                    listaAlunos.Add(al);
+                }
+
+                return listaAlunos;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public Aluno BuscarAluno(string cpfOuId, bool isSeletivo)
         {
             try

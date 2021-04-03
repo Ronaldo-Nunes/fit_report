@@ -30,69 +30,81 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle87 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle78 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle79 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle80 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle81 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle82 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle85 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle86 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend16 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series40 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series41 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series42 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series43 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series44 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title16 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend17 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series45 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series46 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title17 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend18 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series47 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series48 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title18 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend19 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series49 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series50 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title19 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series51 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series52 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title20 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle88 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle91 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle89 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle90 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle92 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnNovoAluno = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnFiltro = new System.Windows.Forms.ToolStripDropDownButton();
+            this.riscoCinturaquadrilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuRcqBaixo = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuRcqModerado = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuRcqAlto = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuRcqMuitoAlto = new System.Windows.Forms.ToolStripMenuItem();
+            this.classificaçãoDeTaxaDeGorduraCorporalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuGorduraBaixa = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuGorduraBoa = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuGorduraNormal = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuGorduraElevada = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuGorduraMuitoElevada = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.btnGerarRelatorioGeral = new System.Windows.Forms.ToolStripMenuItem();
             this.btnGerarRelatorioSeletivo = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnSair = new System.Windows.Forms.ToolStripButton();
             this.splitContainerFull = new System.Windows.Forms.SplitContainer();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.panelPesquisa = new System.Windows.Forms.Panel();
-            this.phTextBox = new FitRelatorio.PlaceHolderTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnListarTodos = new System.Windows.Forms.Button();
             this.gbxListAlunos = new System.Windows.Forms.GroupBox();
@@ -174,6 +186,7 @@
             this.tsMenuExcluir = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.phTextBox = new FitRelatorio.PlaceHolderTextBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerFull)).BeginInit();
             this.splitContainerFull.Panel1.SuspendLayout();
@@ -235,8 +248,10 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnNovoAluno,
             this.toolStripSeparator1,
-            this.toolStripDropDownButton1,
+            this.btnFiltro,
             this.toolStripSeparator2,
+            this.toolStripDropDownButton1,
+            this.toolStripSeparator3,
             this.btnSair});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -259,6 +274,109 @@
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 30);
+            // 
+            // btnFiltro
+            // 
+            this.btnFiltro.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnFiltro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.riscoCinturaquadrilToolStripMenuItem,
+            this.classificaçãoDeTaxaDeGorduraCorporalToolStripMenuItem});
+            this.btnFiltro.Image = ((System.Drawing.Image)(resources.GetObject("btnFiltro.Image")));
+            this.btnFiltro.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnFiltro.Name = "btnFiltro";
+            this.btnFiltro.Size = new System.Drawing.Size(60, 27);
+            this.btnFiltro.Text = "Filtrar";
+            // 
+            // riscoCinturaquadrilToolStripMenuItem
+            // 
+            this.riscoCinturaquadrilToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuRcqBaixo,
+            this.menuRcqModerado,
+            this.menuRcqAlto,
+            this.menuRcqMuitoAlto});
+            this.riscoCinturaquadrilToolStripMenuItem.Name = "riscoCinturaquadrilToolStripMenuItem";
+            this.riscoCinturaquadrilToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
+            this.riscoCinturaquadrilToolStripMenuItem.Text = "Risco cintura-quadril";
+            // 
+            // menuRcqBaixo
+            // 
+            this.menuRcqBaixo.Name = "menuRcqBaixo";
+            this.menuRcqBaixo.Size = new System.Drawing.Size(148, 24);
+            this.menuRcqBaixo.Text = "Baixo";
+            this.menuRcqBaixo.Click += new System.EventHandler(this.menuRcqBaixo_Click);
+            // 
+            // menuRcqModerado
+            // 
+            this.menuRcqModerado.Name = "menuRcqModerado";
+            this.menuRcqModerado.Size = new System.Drawing.Size(148, 24);
+            this.menuRcqModerado.Text = "Moderado";
+            this.menuRcqModerado.Click += new System.EventHandler(this.menuRcqModerado_Click);
+            // 
+            // menuRcqAlto
+            // 
+            this.menuRcqAlto.Name = "menuRcqAlto";
+            this.menuRcqAlto.Size = new System.Drawing.Size(148, 24);
+            this.menuRcqAlto.Text = "Alto";
+            this.menuRcqAlto.Click += new System.EventHandler(this.menuRcqAlto_Click);
+            // 
+            // menuRcqMuitoAlto
+            // 
+            this.menuRcqMuitoAlto.Name = "menuRcqMuitoAlto";
+            this.menuRcqMuitoAlto.Size = new System.Drawing.Size(148, 24);
+            this.menuRcqMuitoAlto.Text = "Muito alto";
+            this.menuRcqMuitoAlto.Click += new System.EventHandler(this.menuRcqMuitoAlto_Click);
+            // 
+            // classificaçãoDeTaxaDeGorduraCorporalToolStripMenuItem
+            // 
+            this.classificaçãoDeTaxaDeGorduraCorporalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuGorduraBaixa,
+            this.menuGorduraBoa,
+            this.menuGorduraNormal,
+            this.menuGorduraElevada,
+            this.menuGorduraMuitoElevada});
+            this.classificaçãoDeTaxaDeGorduraCorporalToolStripMenuItem.Name = "classificaçãoDeTaxaDeGorduraCorporalToolStripMenuItem";
+            this.classificaçãoDeTaxaDeGorduraCorporalToolStripMenuItem.Size = new System.Drawing.Size(245, 24);
+            this.classificaçãoDeTaxaDeGorduraCorporalToolStripMenuItem.Text = "Taxa de gordura corporal";
+            // 
+            // menuGorduraBaixa
+            // 
+            this.menuGorduraBaixa.Name = "menuGorduraBaixa";
+            this.menuGorduraBaixa.Size = new System.Drawing.Size(173, 24);
+            this.menuGorduraBaixa.Text = "Baixa";
+            this.menuGorduraBaixa.Click += new System.EventHandler(this.menuGorduraBaixa_Click);
+            // 
+            // menuGorduraBoa
+            // 
+            this.menuGorduraBoa.Name = "menuGorduraBoa";
+            this.menuGorduraBoa.Size = new System.Drawing.Size(173, 24);
+            this.menuGorduraBoa.Text = "Boa";
+            this.menuGorduraBoa.Click += new System.EventHandler(this.menuGorduraBoa_Click);
+            // 
+            // menuGorduraNormal
+            // 
+            this.menuGorduraNormal.Name = "menuGorduraNormal";
+            this.menuGorduraNormal.Size = new System.Drawing.Size(173, 24);
+            this.menuGorduraNormal.Text = "Normal";
+            this.menuGorduraNormal.Click += new System.EventHandler(this.menuGorduraNormal_Click);
+            // 
+            // menuGorduraElevada
+            // 
+            this.menuGorduraElevada.Name = "menuGorduraElevada";
+            this.menuGorduraElevada.Size = new System.Drawing.Size(173, 24);
+            this.menuGorduraElevada.Text = "Elevada";
+            this.menuGorduraElevada.Click += new System.EventHandler(this.menuGorduraElevada_Click);
+            // 
+            // menuGorduraMuitoElevada
+            // 
+            this.menuGorduraMuitoElevada.Name = "menuGorduraMuitoElevada";
+            this.menuGorduraMuitoElevada.Size = new System.Drawing.Size(173, 24);
+            this.menuGorduraMuitoElevada.Text = "Muito elevada";
+            this.menuGorduraMuitoElevada.Click += new System.EventHandler(this.menuGorduraMuitoElevada_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 30);
             // 
             // toolStripDropDownButton1
             // 
@@ -286,10 +404,10 @@
             this.btnGerarRelatorioSeletivo.Text = "Seletivo";
             this.btnGerarRelatorioSeletivo.Click += new System.EventHandler(this.BtnGerarRelatorioSeletivo_Click);
             // 
-            // toolStripSeparator2
+            // toolStripSeparator3
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 30);
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 30);
             // 
             // btnSair
             // 
@@ -354,23 +472,6 @@
             this.panelPesquisa.Size = new System.Drawing.Size(254, 26);
             this.panelPesquisa.TabIndex = 4;
             // 
-            // phTextBox
-            // 
-            this.phTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.phTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.phTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.phTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic);
-            this.phTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.phTextBox.Location = new System.Drawing.Point(0, 3);
-            this.phTextBox.MinimumSize = new System.Drawing.Size(0, 21);
-            this.phTextBox.Name = "phTextBox";
-            this.phTextBox.PlaceHolderText = "Digite o nome, Cpf ou código";
-            this.phTextBox.Size = new System.Drawing.Size(228, 21);
-            this.phTextBox.TabIndex = 2;
-            this.phTextBox.Text = "Digite o nome, Cpf ou código";
-            this.phTextBox.TextChanged += new System.EventHandler(this.PhTextBox_TextChanged);
-            this.phTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PhTextBox_KeyPress);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::FitRelatorio.Properties.Resources.btnPesquisa;
@@ -423,25 +524,25 @@
             this.dgvListAlunos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListAlunos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
             this.dgvListAlunos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListAlunos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle70.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle70.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListAlunos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle70;
             this.dgvListAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListAlunos.ColumnHeadersVisible = false;
             this.dgvListAlunos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colunaCodAluno,
             this.colunaNome,
             this.dgvAlunosColunaSelecionar});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvListAlunos.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle72.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle72.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle72.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle72.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            dataGridViewCellStyle72.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle72.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle72.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvListAlunos.DefaultCellStyle = dataGridViewCellStyle72;
             this.dgvListAlunos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvListAlunos.GridColor = System.Drawing.SystemColors.Control;
             this.dgvListAlunos.Location = new System.Drawing.Point(5, 94);
@@ -479,10 +580,10 @@
             // 
             // dgvAlunosColunaSelecionar
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle2.NullValue")));
-            this.dgvAlunosColunaSelecionar.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle71.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle71.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle71.NullValue")));
+            this.dgvAlunosColunaSelecionar.DefaultCellStyle = dataGridViewCellStyle71;
             this.dgvAlunosColunaSelecionar.HeaderText = "Selecionar";
             this.dgvAlunosColunaSelecionar.Image = global::FitRelatorio.Properties.Resources.btnShare;
             this.dgvAlunosColunaSelecionar.Name = "dgvAlunosColunaSelecionar";
@@ -543,10 +644,10 @@
             this.dgvAlunosSelecionados.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvAlunosSelecionados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
             this.dgvAlunosSelecionados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAlunosSelecionados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle73.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle73.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle73.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAlunosSelecionados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle73;
             this.dgvAlunosSelecionados.ColumnHeadersHeight = 30;
             this.dgvAlunosSelecionados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvAlunosSelecionados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -554,15 +655,15 @@
             this.colunaIdade,
             this.colunaSexo,
             this.colunaBtnExcluirSelect});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAlunosSelecionados.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle75.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle75.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle75.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle75.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            dataGridViewCellStyle75.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle75.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle75.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAlunosSelecionados.DefaultCellStyle = dataGridViewCellStyle75;
             this.dgvAlunosSelecionados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvAlunosSelecionados.GridColor = System.Drawing.SystemColors.Control;
             this.dgvAlunosSelecionados.Location = new System.Drawing.Point(3, 3);
@@ -608,12 +709,12 @@
             // colunaBtnExcluirSelect
             // 
             this.colunaBtnExcluirSelect.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle5.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle5.NullValue")));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            this.colunaBtnExcluirSelect.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle74.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle74.NullValue")));
+            dataGridViewCellStyle74.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle74.SelectionForeColor = System.Drawing.Color.Black;
+            this.colunaBtnExcluirSelect.DefaultCellStyle = dataGridViewCellStyle74;
             this.colunaBtnExcluirSelect.HeaderText = "Remover";
             this.colunaBtnExcluirSelect.Image = global::FitRelatorio.Properties.Resources.btnExcluirP;
             this.colunaBtnExcluirSelect.Name = "colunaBtnExcluirSelect";
@@ -702,14 +803,14 @@
             this.dgvAvaliacoes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvAvaliacoes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
             this.dgvAvaliacoes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SlateGray;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAvaliacoes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle76.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle76.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle76.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle76.SelectionBackColor = System.Drawing.Color.SlateGray;
+            dataGridViewCellStyle76.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle76.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAvaliacoes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle76;
             this.dgvAvaliacoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAvaliacoes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colunaData,
@@ -723,14 +824,14 @@
             this.colunaGordVisceral,
             this.colunaCintura,
             this.colunaQuadril});
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAvaliacoes.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle87.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle87.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle87.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle87.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle87.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle87.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle87.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAvaliacoes.DefaultCellStyle = dataGridViewCellStyle87;
             this.dgvAvaliacoes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvAvaliacoes.GridColor = System.Drawing.SystemColors.Control;
             this.dgvAvaliacoes.Location = new System.Drawing.Point(3, 3);
@@ -751,8 +852,8 @@
             // 
             this.colunaData.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.colunaData.DataPropertyName = "Data";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.colunaData.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle77.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.colunaData.DefaultCellStyle = dataGridViewCellStyle77;
             this.colunaData.HeaderText = "Data";
             this.colunaData.MinimumWidth = 20;
             this.colunaData.Name = "colunaData";
@@ -763,8 +864,8 @@
             // 
             this.colunaPeso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.colunaPeso.DataPropertyName = "Peso";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colunaPeso.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle78.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colunaPeso.DefaultCellStyle = dataGridViewCellStyle78;
             this.colunaPeso.HeaderText = "Peso (Kg)";
             this.colunaPeso.Name = "colunaPeso";
             this.colunaPeso.ReadOnly = true;
@@ -782,8 +883,8 @@
             // 
             this.colunaImc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.colunaImc.DataPropertyName = "Imc";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colunaImc.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle79.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colunaImc.DefaultCellStyle = dataGridViewCellStyle79;
             this.colunaImc.HeaderText = "IMC";
             this.colunaImc.Name = "colunaImc";
             this.colunaImc.ReadOnly = true;
@@ -793,8 +894,8 @@
             // 
             this.colunaGordCorporal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.colunaGordCorporal.DataPropertyName = "GorduraCorporal";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colunaGordCorporal.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle80.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colunaGordCorporal.DefaultCellStyle = dataGridViewCellStyle80;
             this.colunaGordCorporal.HeaderText = "Gordura corporal (%)";
             this.colunaGordCorporal.Name = "colunaGordCorporal";
             this.colunaGordCorporal.ReadOnly = true;
@@ -804,8 +905,8 @@
             // 
             this.colunaMassMuscEsq.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.colunaMassMuscEsq.DataPropertyName = "MassaMuscEsqueletica";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colunaMassMuscEsq.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle81.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colunaMassMuscEsq.DefaultCellStyle = dataGridViewCellStyle81;
             this.colunaMassMuscEsq.HeaderText = "Massa musc. esq. (%)";
             this.colunaMassMuscEsq.Name = "colunaMassMuscEsq";
             this.colunaMassMuscEsq.ReadOnly = true;
@@ -814,8 +915,8 @@
             // colunaMetabBasal
             // 
             this.colunaMetabBasal.DataPropertyName = "MetabolismoBasal";
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colunaMetabBasal.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle82.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colunaMetabBasal.DefaultCellStyle = dataGridViewCellStyle82;
             this.colunaMetabBasal.HeaderText = "Metab. basal (Kcal)";
             this.colunaMetabBasal.Name = "colunaMetabBasal";
             this.colunaMetabBasal.ReadOnly = true;
@@ -824,8 +925,8 @@
             // colunaIdadeCorp
             // 
             this.colunaIdadeCorp.DataPropertyName = "IdadeCorporal";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colunaIdadeCorp.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle83.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colunaIdadeCorp.DefaultCellStyle = dataGridViewCellStyle83;
             this.colunaIdadeCorp.HeaderText = "Idade corp. (anos)";
             this.colunaIdadeCorp.Name = "colunaIdadeCorp";
             this.colunaIdadeCorp.ReadOnly = true;
@@ -834,8 +935,8 @@
             // colunaGordVisceral
             // 
             this.colunaGordVisceral.DataPropertyName = "GorduraVisceral";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colunaGordVisceral.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle84.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colunaGordVisceral.DefaultCellStyle = dataGridViewCellStyle84;
             this.colunaGordVisceral.HeaderText = "Gordura visc.";
             this.colunaGordVisceral.Name = "colunaGordVisceral";
             this.colunaGordVisceral.ReadOnly = true;
@@ -844,8 +945,8 @@
             // colunaCintura
             // 
             this.colunaCintura.DataPropertyName = "Cintura";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colunaCintura.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle85.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colunaCintura.DefaultCellStyle = dataGridViewCellStyle85;
             this.colunaCintura.HeaderText = "Cintura (cm)";
             this.colunaCintura.Name = "colunaCintura";
             this.colunaCintura.ReadOnly = true;
@@ -854,8 +955,8 @@
             // colunaQuadril
             // 
             this.colunaQuadril.DataPropertyName = "Quadril";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colunaQuadril.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle86.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colunaQuadril.DefaultCellStyle = dataGridViewCellStyle86;
             this.colunaQuadril.HeaderText = "Quadril (cm)";
             this.colunaQuadril.Name = "colunaQuadril";
             this.colunaQuadril.ReadOnly = true;
@@ -890,11 +991,11 @@
             // 
             // graficoRiscQuadrilCintura
             // 
-            chartArea1.Name = "ChartArea1";
-            this.graficoRiscQuadrilCintura.ChartAreas.Add(chartArea1);
+            chartArea16.Name = "ChartArea1";
+            this.graficoRiscQuadrilCintura.ChartAreas.Add(chartArea16);
             this.graficoRiscQuadrilCintura.Dock = System.Windows.Forms.DockStyle.Top;
-            legend1.Name = "Legend1";
-            this.graficoRiscQuadrilCintura.Legends.Add(legend1);
+            legend16.Name = "Legend1";
+            this.graficoRiscQuadrilCintura.Legends.Add(legend16);
             this.graficoRiscQuadrilCintura.Location = new System.Drawing.Point(0, 1400);
             this.graficoRiscQuadrilCintura.Name = "graficoRiscQuadrilCintura";
             this.graficoRiscQuadrilCintura.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
@@ -904,213 +1005,213 @@
         System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192))))),
         System.Drawing.Color.Black};
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
-            series1.Color = System.Drawing.Color.DarkRed;
-            series1.LabelForeColor = System.Drawing.Color.Bisque;
-            series1.Legend = "Legend1";
-            series1.Name = "Risco muito alto";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
-            series2.Color = System.Drawing.Color.Crimson;
-            series2.Legend = "Legend1";
-            series2.Name = "Risco alto";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
-            series3.Color = System.Drawing.Color.Gold;
-            series3.Legend = "Legend1";
-            series3.Name = "Risco moderado";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
-            series4.Color = System.Drawing.Color.SpringGreen;
-            series4.Legend = "Legend1";
-            series4.Name = "Baixo risco";
-            series5.BorderWidth = 3;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Color = System.Drawing.Color.Black;
-            series5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            series5.IsValueShownAsLabel = true;
-            series5.Legend = "Legend1";
-            series5.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series5.Name = "Resultado";
-            this.graficoRiscQuadrilCintura.Series.Add(series1);
-            this.graficoRiscQuadrilCintura.Series.Add(series2);
-            this.graficoRiscQuadrilCintura.Series.Add(series3);
-            this.graficoRiscQuadrilCintura.Series.Add(series4);
-            this.graficoRiscQuadrilCintura.Series.Add(series5);
+            series40.ChartArea = "ChartArea1";
+            series40.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
+            series40.Color = System.Drawing.Color.DarkRed;
+            series40.LabelForeColor = System.Drawing.Color.Bisque;
+            series40.Legend = "Legend1";
+            series40.Name = "Risco muito alto";
+            series41.ChartArea = "ChartArea1";
+            series41.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
+            series41.Color = System.Drawing.Color.Crimson;
+            series41.Legend = "Legend1";
+            series41.Name = "Risco alto";
+            series42.ChartArea = "ChartArea1";
+            series42.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
+            series42.Color = System.Drawing.Color.Gold;
+            series42.Legend = "Legend1";
+            series42.Name = "Risco moderado";
+            series43.ChartArea = "ChartArea1";
+            series43.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
+            series43.Color = System.Drawing.Color.SpringGreen;
+            series43.Legend = "Legend1";
+            series43.Name = "Baixo risco";
+            series44.BorderWidth = 3;
+            series44.ChartArea = "ChartArea1";
+            series44.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series44.Color = System.Drawing.Color.Black;
+            series44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            series44.IsValueShownAsLabel = true;
+            series44.Legend = "Legend1";
+            series44.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series44.Name = "Resultado";
+            this.graficoRiscQuadrilCintura.Series.Add(series40);
+            this.graficoRiscQuadrilCintura.Series.Add(series41);
+            this.graficoRiscQuadrilCintura.Series.Add(series42);
+            this.graficoRiscQuadrilCintura.Series.Add(series43);
+            this.graficoRiscQuadrilCintura.Series.Add(series44);
             this.graficoRiscQuadrilCintura.Size = new System.Drawing.Size(782, 300);
             this.graficoRiscQuadrilCintura.TabIndex = 6;
             this.graficoRiscQuadrilCintura.Text = "chart1";
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.Name = "TitleRicQC";
-            title1.Text = "Relação cintura-quadril";
-            this.graficoRiscQuadrilCintura.Titles.Add(title1);
+            title16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title16.Name = "TitleRicQC";
+            title16.Text = "Relação cintura-quadril";
+            this.graficoRiscQuadrilCintura.Titles.Add(title16);
             // 
             // graficoTxMassaMusc
             // 
             this.graficoTxMassaMusc.BorderSkin.BackColor = System.Drawing.Color.DimGray;
-            chartArea2.Name = "ChartArea1";
-            this.graficoTxMassaMusc.ChartAreas.Add(chartArea2);
+            chartArea17.Name = "ChartArea1";
+            this.graficoTxMassaMusc.ChartAreas.Add(chartArea17);
             this.graficoTxMassaMusc.Dock = System.Windows.Forms.DockStyle.Top;
-            legend2.Name = "Legend1";
-            this.graficoTxMassaMusc.Legends.Add(legend2);
+            legend17.Name = "Legend1";
+            this.graficoTxMassaMusc.Legends.Add(legend17);
             this.graficoTxMassaMusc.Location = new System.Drawing.Point(0, 1100);
             this.graficoTxMassaMusc.Name = "graficoTxMassaMusc";
             this.graficoTxMassaMusc.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series6.BorderColor = System.Drawing.Color.SteelBlue;
-            series6.ChartArea = "ChartArea1";
-            series6.Color = System.Drawing.Color.SlateGray;
-            series6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            series6.IsValueShownAsLabel = true;
-            series6.Legend = "Legend1";
-            series6.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series6.Name = "Massa muscular (%)";
-            series6.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series7.BorderColor = System.Drawing.Color.Olive;
-            series7.BorderWidth = 2;
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            series7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            series7.IsValueShownAsLabel = true;
-            series7.Legend = "Legend1";
-            series7.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series7.Name = "Variação (%)";
-            this.graficoTxMassaMusc.Series.Add(series6);
-            this.graficoTxMassaMusc.Series.Add(series7);
+            series45.BorderColor = System.Drawing.Color.SteelBlue;
+            series45.ChartArea = "ChartArea1";
+            series45.Color = System.Drawing.Color.SlateGray;
+            series45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            series45.IsValueShownAsLabel = true;
+            series45.Legend = "Legend1";
+            series45.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series45.Name = "Massa muscular (%)";
+            series45.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series46.BorderColor = System.Drawing.Color.Olive;
+            series46.BorderWidth = 2;
+            series46.ChartArea = "ChartArea1";
+            series46.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series46.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            series46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            series46.IsValueShownAsLabel = true;
+            series46.Legend = "Legend1";
+            series46.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series46.Name = "Variação (%)";
+            this.graficoTxMassaMusc.Series.Add(series45);
+            this.graficoTxMassaMusc.Series.Add(series46);
             this.graficoTxMassaMusc.Size = new System.Drawing.Size(782, 300);
             this.graficoTxMassaMusc.TabIndex = 4;
             this.graficoTxMassaMusc.Text = "chart1";
-            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.Name = "TitleMasMusc";
-            title2.Text = "Massa muscular";
-            this.graficoTxMassaMusc.Titles.Add(title2);
+            title17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title17.Name = "TitleMasMusc";
+            title17.Text = "Massa muscular";
+            this.graficoTxMassaMusc.Titles.Add(title17);
             // 
             // graficoTxGordura
             // 
-            chartArea3.Name = "ChartArea1";
-            this.graficoTxGordura.ChartAreas.Add(chartArea3);
+            chartArea18.Name = "ChartArea1";
+            this.graficoTxGordura.ChartAreas.Add(chartArea18);
             this.graficoTxGordura.Dock = System.Windows.Forms.DockStyle.Top;
-            legend3.Name = "Legend1";
-            this.graficoTxGordura.Legends.Add(legend3);
+            legend18.Name = "Legend1";
+            this.graficoTxGordura.Legends.Add(legend18);
             this.graficoTxGordura.Location = new System.Drawing.Point(0, 800);
             this.graficoTxGordura.Name = "graficoTxGordura";
-            series8.BorderColor = System.Drawing.Color.MidnightBlue;
-            series8.ChartArea = "ChartArea1";
-            series8.Color = System.Drawing.Color.DodgerBlue;
-            series8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            series8.IsValueShownAsLabel = true;
-            series8.Legend = "Legend1";
-            series8.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series8.Name = "Taxa de gordura (%)";
-            series8.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
-            series8.SmartLabelStyle.CalloutLineColor = System.Drawing.Color.DodgerBlue;
-            series9.BorderColor = System.Drawing.Color.Olive;
-            series9.BorderWidth = 2;
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Color = System.Drawing.Color.DodgerBlue;
-            series9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            series9.IsValueShownAsLabel = true;
-            series9.LabelBorderWidth = 2;
-            series9.Legend = "Legend1";
-            series9.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series9.Name = "Variação (%)";
-            this.graficoTxGordura.Series.Add(series8);
-            this.graficoTxGordura.Series.Add(series9);
+            series47.BorderColor = System.Drawing.Color.MidnightBlue;
+            series47.ChartArea = "ChartArea1";
+            series47.Color = System.Drawing.Color.DodgerBlue;
+            series47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            series47.IsValueShownAsLabel = true;
+            series47.Legend = "Legend1";
+            series47.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series47.Name = "Taxa de gordura (%)";
+            series47.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
+            series47.SmartLabelStyle.CalloutLineColor = System.Drawing.Color.DodgerBlue;
+            series48.BorderColor = System.Drawing.Color.Olive;
+            series48.BorderWidth = 2;
+            series48.ChartArea = "ChartArea1";
+            series48.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series48.Color = System.Drawing.Color.DodgerBlue;
+            series48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            series48.IsValueShownAsLabel = true;
+            series48.LabelBorderWidth = 2;
+            series48.Legend = "Legend1";
+            series48.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series48.Name = "Variação (%)";
+            this.graficoTxGordura.Series.Add(series47);
+            this.graficoTxGordura.Series.Add(series48);
             this.graficoTxGordura.Size = new System.Drawing.Size(782, 300);
             this.graficoTxGordura.TabIndex = 0;
-            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title3.Name = "TitleGord";
-            title3.Text = "Gordura corporal";
-            this.graficoTxGordura.Titles.Add(title3);
+            title18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title18.Name = "TitleGord";
+            title18.Text = "Gordura corporal";
+            this.graficoTxGordura.Titles.Add(title18);
             // 
             // graficoImc
             // 
-            chartArea4.Name = "ChartArea1";
-            this.graficoImc.ChartAreas.Add(chartArea4);
+            chartArea19.Name = "ChartArea1";
+            this.graficoImc.ChartAreas.Add(chartArea19);
             this.graficoImc.Dock = System.Windows.Forms.DockStyle.Top;
-            legend4.Name = "Legend1";
-            this.graficoImc.Legends.Add(legend4);
+            legend19.Name = "Legend1";
+            this.graficoImc.Legends.Add(legend19);
             this.graficoImc.Location = new System.Drawing.Point(0, 500);
             this.graficoImc.Name = "graficoImc";
             this.graficoImc.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             this.graficoImc.PaletteCustomColors = new System.Drawing.Color[] {
         System.Drawing.Color.Crimson,
         System.Drawing.Color.DodgerBlue};
-            series10.BorderColor = System.Drawing.Color.DarkSlateGray;
-            series10.ChartArea = "ChartArea1";
-            series10.Color = System.Drawing.Color.MediumTurquoise;
-            series10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            series10.IsValueShownAsLabel = true;
-            series10.Legend = "Legend1";
-            series10.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series10.Name = "IMC";
-            series10.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series11.BorderColor = System.Drawing.Color.MidnightBlue;
-            series11.BorderWidth = 2;
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series11.Color = System.Drawing.Color.DarkSlateGray;
-            series11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            series11.IsValueShownAsLabel = true;
-            series11.Legend = "Legend1";
-            series11.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series11.Name = "Variação (%)";
-            this.graficoImc.Series.Add(series10);
-            this.graficoImc.Series.Add(series11);
+            series49.BorderColor = System.Drawing.Color.DarkSlateGray;
+            series49.ChartArea = "ChartArea1";
+            series49.Color = System.Drawing.Color.MediumTurquoise;
+            series49.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            series49.IsValueShownAsLabel = true;
+            series49.Legend = "Legend1";
+            series49.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series49.Name = "IMC";
+            series49.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series50.BorderColor = System.Drawing.Color.MidnightBlue;
+            series50.BorderWidth = 2;
+            series50.ChartArea = "ChartArea1";
+            series50.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series50.Color = System.Drawing.Color.DarkSlateGray;
+            series50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            series50.IsValueShownAsLabel = true;
+            series50.Legend = "Legend1";
+            series50.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series50.Name = "Variação (%)";
+            this.graficoImc.Series.Add(series49);
+            this.graficoImc.Series.Add(series50);
             this.graficoImc.Size = new System.Drawing.Size(782, 300);
             this.graficoImc.TabIndex = 7;
             this.graficoImc.Text = "chart1";
-            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title4.Name = "TitleOmc";
-            title4.Text = "Variação do IMC";
-            this.graficoImc.Titles.Add(title4);
+            title19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title19.Name = "TitleOmc";
+            title19.Text = "Variação do IMC";
+            this.graficoImc.Titles.Add(title19);
             // 
             // graficoPeso
             // 
-            chartArea5.Name = "ChartArea1";
-            this.graficoPeso.ChartAreas.Add(chartArea5);
+            chartArea20.Name = "ChartArea1";
+            this.graficoPeso.ChartAreas.Add(chartArea20);
             this.graficoPeso.Dock = System.Windows.Forms.DockStyle.Top;
-            legend5.Name = "Legend1";
-            this.graficoPeso.Legends.Add(legend5);
+            legend20.Name = "Legend1";
+            this.graficoPeso.Legends.Add(legend20);
             this.graficoPeso.Location = new System.Drawing.Point(0, 200);
             this.graficoPeso.Name = "graficoPeso";
             this.graficoPeso.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             this.graficoPeso.PaletteCustomColors = new System.Drawing.Color[] {
         System.Drawing.Color.Crimson,
         System.Drawing.Color.DodgerBlue};
-            series12.BorderColor = System.Drawing.Color.DarkSlateGray;
-            series12.ChartArea = "ChartArea1";
-            series12.Color = System.Drawing.Color.Teal;
-            series12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            series12.IsValueShownAsLabel = true;
-            series12.LabelForeColor = System.Drawing.Color.DarkSlateGray;
-            series12.Legend = "Legend1";
-            series12.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series12.Name = "Peso (Kg)";
-            series12.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
-            series13.BorderColor = System.Drawing.Color.MidnightBlue;
-            series13.BorderWidth = 2;
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series13.Color = System.Drawing.Color.DodgerBlue;
-            series13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            series13.IsValueShownAsLabel = true;
-            series13.LabelForeColor = System.Drawing.Color.MidnightBlue;
-            series13.Legend = "Legend1";
-            series13.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series13.Name = "Variação (%)";
-            this.graficoPeso.Series.Add(series12);
-            this.graficoPeso.Series.Add(series13);
+            series51.BorderColor = System.Drawing.Color.DarkSlateGray;
+            series51.ChartArea = "ChartArea1";
+            series51.Color = System.Drawing.Color.Teal;
+            series51.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            series51.IsValueShownAsLabel = true;
+            series51.LabelForeColor = System.Drawing.Color.DarkSlateGray;
+            series51.Legend = "Legend1";
+            series51.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series51.Name = "Peso (Kg)";
+            series51.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.BrightPastel;
+            series52.BorderColor = System.Drawing.Color.MidnightBlue;
+            series52.BorderWidth = 2;
+            series52.ChartArea = "ChartArea1";
+            series52.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series52.Color = System.Drawing.Color.DodgerBlue;
+            series52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            series52.IsValueShownAsLabel = true;
+            series52.LabelForeColor = System.Drawing.Color.MidnightBlue;
+            series52.Legend = "Legend1";
+            series52.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series52.Name = "Variação (%)";
+            this.graficoPeso.Series.Add(series51);
+            this.graficoPeso.Series.Add(series52);
             this.graficoPeso.Size = new System.Drawing.Size(782, 300);
             this.graficoPeso.TabIndex = 5;
             this.graficoPeso.Text = "chart1";
-            title5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title5.Name = "Titlepeso";
-            title5.Text = "Peso Corporal";
-            this.graficoPeso.Titles.Add(title5);
+            title20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title20.Name = "Titlepeso";
+            title20.Text = "Peso Corporal";
+            this.graficoPeso.Titles.Add(title20);
             // 
             // panelAvalSelect
             // 
@@ -1152,10 +1253,10 @@
             this.dgvAvaliacaoSelect.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvAvaliacaoSelect.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
             this.dgvAvaliacaoSelect.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAvaliacaoSelect.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle88.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle88.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle88.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAvaliacaoSelect.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle88;
             this.dgvAvaliacaoSelect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAvaliacaoSelect.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -1164,14 +1265,14 @@
             this.colunaImcSelect,
             this.colunaCinturaSelect,
             this.colunaQuadrilSelect});
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAvaliacaoSelect.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle91.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle91.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle91.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle91.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle91.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle91.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle91.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAvaliacaoSelect.DefaultCellStyle = dataGridViewCellStyle91;
             this.dgvAvaliacaoSelect.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvAvaliacaoSelect.GridColor = System.Drawing.SystemColors.Control;
             this.dgvAvaliacaoSelect.Location = new System.Drawing.Point(0, 0);
@@ -1226,8 +1327,8 @@
             // 
             this.colunaCinturaSelect.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.colunaCinturaSelect.DataPropertyName = "Cintura";
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colunaCinturaSelect.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle89.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colunaCinturaSelect.DefaultCellStyle = dataGridViewCellStyle89;
             this.colunaCinturaSelect.HeaderText = "Cintura (cm)";
             this.colunaCinturaSelect.Name = "colunaCinturaSelect";
             this.colunaCinturaSelect.ReadOnly = true;
@@ -1237,8 +1338,8 @@
             // 
             this.colunaQuadrilSelect.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.colunaQuadrilSelect.DataPropertyName = "Quadril";
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colunaQuadrilSelect.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle90.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colunaQuadrilSelect.DefaultCellStyle = dataGridViewCellStyle90;
             this.colunaQuadrilSelect.HeaderText = "Quadril (cm)";
             this.colunaQuadrilSelect.Name = "colunaQuadrilSelect";
             this.colunaQuadrilSelect.ReadOnly = true;
@@ -1287,9 +1388,6 @@
             this.lblInfoGrafico.Padding = new System.Windows.Forms.Padding(10);
             this.lblInfoGrafico.Size = new System.Drawing.Size(782, 60);
             this.lblInfoGrafico.TabIndex = 9;
-            this.lblInfoGrafico.Text = "Exibindo gráficos das seis últimas avaliações. Para personalizar a exibição dos r" +
-    "esultados, selecione ao menos duas das avaliações abaixo para gerar seus respect" +
-    "ivos gráficos.";
             this.lblInfoGrafico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel_info_aluno
@@ -1628,10 +1726,10 @@
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle23.NullValue")));
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.White;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle92.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle92.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle92.NullValue")));
+            dataGridViewCellStyle92.SelectionBackColor = System.Drawing.Color.White;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle92;
             this.dataGridViewImageColumn1.Frozen = true;
             this.dataGridViewImageColumn1.HeaderText = "";
             this.dataGridViewImageColumn1.Image = global::FitRelatorio.Properties.Resources.btnExcluirP;
@@ -1653,6 +1751,23 @@
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewImageColumn2.Width = 25;
+            // 
+            // phTextBox
+            // 
+            this.phTextBox.BackColor = System.Drawing.SystemColors.Control;
+            this.phTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.phTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.phTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic);
+            this.phTextBox.ForeColor = System.Drawing.Color.Gray;
+            this.phTextBox.Location = new System.Drawing.Point(0, 3);
+            this.phTextBox.MinimumSize = new System.Drawing.Size(0, 21);
+            this.phTextBox.Name = "phTextBox";
+            this.phTextBox.PlaceHolderText = "Digite o nome, Cpf ou código";
+            this.phTextBox.Size = new System.Drawing.Size(228, 21);
+            this.phTextBox.TabIndex = 2;
+            this.phTextBox.Text = "Digite o nome, Cpf ou código";
+            this.phTextBox.TextChanged += new System.EventHandler(this.PhTextBox_TextChanged);
+            this.phTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PhTextBox_KeyPress);
             // 
             // FrmHome
             // 
@@ -1827,5 +1942,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colunaCodAluno;
         private System.Windows.Forms.DataGridViewTextBoxColumn colunaNome;
         private System.Windows.Forms.DataGridViewImageColumn dgvAlunosColunaSelecionar;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripDropDownButton btnFiltro;
+        private System.Windows.Forms.ToolStripMenuItem riscoCinturaquadrilToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuRcqBaixo;
+        private System.Windows.Forms.ToolStripMenuItem menuRcqModerado;
+        private System.Windows.Forms.ToolStripMenuItem menuRcqAlto;
+        private System.Windows.Forms.ToolStripMenuItem menuRcqMuitoAlto;
+        private System.Windows.Forms.ToolStripMenuItem classificaçãoDeTaxaDeGorduraCorporalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuGorduraBaixa;
+        private System.Windows.Forms.ToolStripMenuItem menuGorduraBoa;
+        private System.Windows.Forms.ToolStripMenuItem menuGorduraNormal;
+        private System.Windows.Forms.ToolStripMenuItem menuGorduraElevada;
+        private System.Windows.Forms.ToolStripMenuItem menuGorduraMuitoElevada;
     }
 }

@@ -2,9 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Transactions;
 
 namespace FitRelatorio.DAL
@@ -36,7 +33,8 @@ namespace FitRelatorio.DAL
                             "quadril," +
                             "rcq," +
                             "grauRisco," +
-                            "idade) " +
+                            "idade," +
+                            "classificacaoGorduraCorporal) " +
                          "VALUES (@codAluno," +
                          "@data," +
                          "@peso," +
@@ -51,7 +49,8 @@ namespace FitRelatorio.DAL
                          "@quadril," +
                          "@rcq," +
                          "@grauRisco," +
-                         "@idade)";
+                         "@idade," +
+                         "@classificacaoGorduraCorporal)";
                     }
                     else
                     {
@@ -70,7 +69,8 @@ namespace FitRelatorio.DAL
                             "quadril = @quadril, " +
                             "rcq = @rcq, " +
                             "grauRisco = @grauRisco, " +
-                            "idade = @idade " +
+                            "idade = @idade, " +
+                            "classificacaoGorduraCorporal = @classificacaoGorduraCorporal " +
                             "WHERE codAvaliacao == @codAvaliacao";
                         Conexao.AdicionarParametros("@codAvaliacao", avaliacao.CodAvaliacao);
                     }
@@ -90,6 +90,7 @@ namespace FitRelatorio.DAL
                     Conexao.AdicionarParametros("@rcq", avaliacao.Rcq);
                     Conexao.AdicionarParametros("@grauRisco", avaliacao.GrauRisco);
                     Conexao.AdicionarParametros("@idade", avaliacao.Idade);
+                    Conexao.AdicionarParametros("@classificacaoGorduraCorporal", avaliacao.ClassificacaoGorduraCorporal);
 
                     Conexao.ExecutarManipulacao(CommandType.Text, sqlSalvarAvaliacao);
                     retorno = true;
@@ -133,7 +134,8 @@ namespace FitRelatorio.DAL
                     "quadril," +
                     "rcq," +
                     "grauRisco," +
-                    "idade" +
+                    "idade," +
+                    "classificacaoGorduraCorporal" +
                     " FROM avaliacao WHERE codAluno == @codAluno ORDER BY data DESC";
 
                 DataTable dataTable = Conexao.ExecutarConsulta(CommandType.Text, sqlListarAvaliacao);
@@ -156,7 +158,8 @@ namespace FitRelatorio.DAL
                         Quadril = Convert.ToDecimal(dataRow["quadril"]),
                         Rcq = Convert.ToDecimal(dataRow["rcq"]),
                         GrauRisco = Convert.ToString(dataRow["grauRisco"]),
-                        Idade = Convert.ToInt32(dataRow["idade"])
+                        Idade = Convert.ToInt32(dataRow["idade"]),
+                        ClassificacaoGorduraCorporal = Convert.ToString(dataRow["classificacaoGorduraCorporal"])
                     };
 
                     listaAvaliacoes.Add(av);
@@ -212,7 +215,7 @@ namespace FitRelatorio.DAL
                     "quadril" +
                     "rcq," +
                     "grauRisco," +
-                    "idade" +
+                    "idade," +
                     " FROM avaliacao WHERE codAluno == @codAluno ORDER BY data ASC";
 
                 DataTable dataTable = Conexao.ExecutarConsulta(CommandType.Text, sqlListarInfo);
@@ -361,7 +364,6 @@ namespace FitRelatorio.DAL
                 throw;
             }
         }
-
 
         public DataTable GetVariacaoFisicaPorSexoFaixaEtaria(int ano, string campoAvaliacao)
         {
